@@ -1,0 +1,14 @@
+# To use:
+# specically for AWS SageMaker StudioLab environment setup
+#   $ conda env create -f conda_env.yml
+#   $ conda activate kerasenv
+name: kerasenv
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+    - sklearn
+    - tensorflow
+    - pandas
+    - matplotlib
+    - ipykernel

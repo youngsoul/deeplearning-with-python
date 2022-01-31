@@ -23,7 +23,7 @@ def _create_model():
     headModel = Flatten(name="flatten")(headModel)
     headModel = Dense(128, activation="relu")(headModel)
     headModel = Dropout(0.5)(headModel)
-    headModel = Dense(1, activation="sigmoid")(headModel)
+    headModel = Dense(1, activation="sigmoid")(headModel)  # create binary classifier.  Deer exists or not
 
     # place the head FC model on top of the base model ( this will become
     # the actual model we will train )
